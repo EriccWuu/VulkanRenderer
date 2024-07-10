@@ -1,0 +1,7 @@
+# test/CMakeLists.txt
+add_executable(sandbox sandbox.cpp)
+target_include_directories(sandbox PRIVATE ${SDL2_INCLUDE_DIRS})
+target_link_libraries(sandbox PRIVATE Vulkan::Vulkan)
+target_link_libraries(sandbox PRIVATE glm)
+target_link_libraries(sandbox PRIVATE ${SDL2_LIBRARIES} SDL2main)
+target_link_libraries(sandbox PRIVATE ${renderer_name})

@@ -1,0 +1,74 @@
+[
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\buffer.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\buffer.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/buffer.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/buffer.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\command_manager.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\command_manager.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/command_manager.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/command_manager.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\context.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\context.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/context.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/context.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\descriptor_manager.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\descriptor_manager.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/descriptor_manager.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/descriptor_manager.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\huahualib.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\huahualib.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/huahualib.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/huahualib.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\render_process.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\render_process.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/render_process.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/render_process.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\renderer.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\renderer.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/renderer.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/renderer.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\shader.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\shader.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/shader.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/shader.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\swapchain.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\swapchain.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/swapchain.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/swapchain.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\texture.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\texture.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/texture.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/texture.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/VulanRenderer.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\VulanRenderer.dir\\src\\tool.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\src\\tool.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/tool.cpp",
+  "output": "renderer/CMakeFiles/VulanRenderer.dir/src/tool.cpp.obj"
+},
+{
+  "directory": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/sandbox",
+  "command": "E:\\Program\\MSYS64\\clang64\\bin\\clang++.exe  @CMakeFiles/sandbox.dir/includes_CXX.rsp  -O3 -g -std=gnu++20 -o CMakeFiles\\sandbox.dir\\sandbox.cpp.obj -c E:\\Doc\\ProjectFiles\\CPP\\VulkanRenderer\\renderer\\sandbox\\sandbox.cpp",
+  "file": "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/sandbox/sandbox.cpp",
+  "output": "renderer/sandbox/CMakeFiles/sandbox.dir/sandbox.cpp.obj"
+}
+]

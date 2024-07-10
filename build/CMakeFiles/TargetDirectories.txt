@@ -1,0 +1,12 @@
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/CMakeFiles/edit_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/CMakeFiles/rebuild_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/CMakeFiles/VulanRenderer.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/CMakeFiles/edit_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/CMakeFiles/rebuild_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/3rdparty/CMakeFiles/edit_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/3rdparty/CMakeFiles/rebuild_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/3rdparty/glm/CMakeFiles/edit_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/3rdparty/glm/CMakeFiles/rebuild_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/sandbox/CMakeFiles/sandbox.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/sandbox/CMakeFiles/edit_cache.dir
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/build/renderer/sandbox/CMakeFiles/rebuild_cache.dir

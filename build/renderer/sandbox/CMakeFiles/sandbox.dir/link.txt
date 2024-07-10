@@ -1,0 +1,3 @@
+E:\Program\CMake\bin\cmake.exe -E rm -f CMakeFiles\sandbox.dir/objects.a
+E:\Program\MSYS64\clang64\bin\llvm-ar.exe qc CMakeFiles\sandbox.dir/objects.a @CMakeFiles\sandbox.dir\objects1.rsp
+E:\Program\MSYS64\clang64\bin\clang++.exe  -O3 -g -Wl,--undefined=WinMain -Wl,--whole-archive CMakeFiles\sandbox.dir/objects.a -Wl,--no-whole-archive -o ..\..\bin\sandbox.exe -Wl,--out-implib,libsandbox.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\sandbox.dir\linkLibs.rsp
