@@ -817,13 +817,280 @@ renderer/sandbox/CMakeFiles/sandbox.dir/sandbox.cpp.obj: E:/Doc/ProjectFiles/CPP
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/context.h \
   E:/Program/MSYS64/clang64/include/memory.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/swapchain.h \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/image.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/shader.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/render_process.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/command_manager.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/descriptor_manager.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/texture.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/buffer.h \
-  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/renderer.h
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/renderer.h \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/vertex.h \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/glm.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/_fixes.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/setup.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/simd/platform.h \
+  E:/Program/MSYS64/clang64/include/c++/v1/cfloat \
+  E:/Program/MSYS64/clang64/include/c++/v1/float.h \
+  E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/float.h \
+  E:/Program/MSYS64/clang64/include/float.h \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/fwd.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/qualifier.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec2.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/compute_vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int2_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_int_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/setup.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint2_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_uint_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec3.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/compute_vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int3_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint3_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec4.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int4_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint4_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x2.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/matrix.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x3.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x4.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x2.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x3.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x4.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x2.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x3.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x3_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x4.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x4_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_matrix.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_geometric.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/exponential.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec1.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_exponential.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_vector_relational.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/_vectorize.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_common.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/compute_common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x2_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_trigonometric.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/exponential.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/packing.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_packing.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_half.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_half.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/matrix.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/integer.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_integer.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/hash.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/vec1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool1_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float1_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double1_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int1_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint1_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/quaternion.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_constants.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/constants.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/matrix_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_projection.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/matrix.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_projection.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_clip_space.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_clip_space.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_transform.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/matrix_transform.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/matrix.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/qualifier.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_relational.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_float.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/exponential.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_geometric.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_common.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_float.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_quat.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_relational.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/matrix_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_quat.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_float_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_double.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_double_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_trigonometric.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_transform.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/quaternion.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/exponential.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/epsilon.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/setup.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/qualifier.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/epsilon.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/dual_quaternion.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/glm.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/dual_quaternion.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/hash.inl \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/model.h \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/include/tiny_obj_loader.h \
+  E:/Program/MSYS64/clang64/include/c++/v1/map \
+  E:/Program/MSYS64/clang64/include/c++/v1/__tree
 
 
 E:/Program/MSYS64/clang64/include/c++/v1/__functional/function.h:
@@ -853,6 +1120,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__iterator/incrementable_traits.h:
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_main.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/remove_cvref.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double2.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/type_traits:
 
@@ -906,6 +1175,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__compare/compare_strong_order_fallback
 
 E:/Program/MSYS64/clang64/include/winsdkver.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x4_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__config_site:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512vlvp2intersectintrin.h:
@@ -917,6 +1188,8 @@ E:/Program/MSYS64/clang64/include/winapifamily.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/stable_sort.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/errno.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/simd/platform.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/stddef.h:
 
@@ -930,13 +1203,21 @@ E:/Program/MSYS64/clang64/include/c++/v1/__compare/partial_order.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__chrono/calendar.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x2.hpp:
+
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/bmiintrin.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec3.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_valid_expansion.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/compute_common.hpp:
 
 E:/Program/MSYS64/clang64/include/corecrt.h:
 
 E:/Program/MSYS64/clang64/include/d3d12sdklayers.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/packing.hpp:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/f16cintrin.h:
 
@@ -996,6 +1277,8 @@ E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_object.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x3_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/copy_cvref.h:
 
 E:/Program/VulkanSDK/VK_1.3.280.0/Include/vk_video/vulkan_video_codec_h264std_encode.h:
@@ -1016,7 +1299,13 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/comp.h:
 
 E:/Program/MSYS64/clang64/include/process.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_projection.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x3.inl:
+
 E:/Program/MSYS64/clang64/include/_mingw.h:
+
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/vertex.h:
 
 E:/Program/MSYS64/clang64/include/_mingw_mac.h:
 
@@ -1032,9 +1321,15 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/aligned_storage.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_move_constructible.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_trigonometric.inl:
+
 E:/Program/VulkanSDK/VK_1.3.280.0/Include/vk_video/vulkan_video_codec_h264std_decode.h:
 
 E:/Program/MSYS64/clang64/include/vadefs.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/integer.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int3.hpp:
 
 E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan_to_string.hpp:
 
@@ -1051,6 +1346,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__memory/ranges_uninitialized_algorithm
 E:/Program/MSYS64/clang64/include/wchar.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__utility/as_const.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x4.hpp:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_error.h:
 
@@ -1071,6 +1368,8 @@ E:/Program/MSYS64/clang64/include/corecrt_startup.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__chrono/monthday.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/limits:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/epsilon.inl:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/x86gprintrin.h:
 
@@ -1152,6 +1451,8 @@ E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/xmmintrin.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__ranges/empty.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_relational.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_enum.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/remove_pointer.h:
@@ -1176,7 +1477,11 @@ E:/Program/MSYS64/clang64/include/c++/v1/__compare/compare_partial_order_fallbac
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/smmintrin.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x2.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__utility/auto_cast.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/matrix.hpp:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/popcntintrin.h:
 
@@ -1186,9 +1491,15 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_partition_copy.h:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/__wmmintrin_aes.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint2.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_nothrow_copy_assignable.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float3_precision.hpp:
+
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/__wmmintrin_pclmul.h:
+
+E:/Program/MSYS64/clang64/include/float.h:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/clflushoptintrin.h:
 
@@ -1199,6 +1510,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_remove_copy_if.h:
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx2intrin.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_primary_template.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_common.inl:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/bmi2intrin.h:
 
@@ -1242,11 +1555,19 @@ E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512vlbwintrin.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/cstring:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/quaternion.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int4_sized.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/reverse.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__chrono/time_point.h:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512vldqintrin.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_clip_space.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x3_precision.hpp:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512erintrin.h:
 
@@ -1270,15 +1591,21 @@ E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512vbmi2intrin.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_compound.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_common.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_reference.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/istream_iterator.h:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512vlvbmi2intrin.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/dual_quaternion.inl:
+
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512pfintrin.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/remove_cv.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_transform.inl:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512bf16intrin.h:
 
@@ -1291,6 +1618,8 @@ E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/avx512vlbf16intrin.h:
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_filesystem.h:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/pkuintrin.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x2.inl:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/move_backward.h:
 
@@ -1331,6 +1660,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/make_heap.h:
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/xsaveintrin.h:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/waitpkgintrin.h:
+
+E:/Program/MSYS64/clang64/include/c++/v1/float.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_video.h:
 
@@ -1388,6 +1719,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_destructible.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__functional/identity.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_matrix.inl:
+
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/enqcmdintrin.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/partial_sort.h:
@@ -1432,6 +1765,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__hash_table:
 
 E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/rdpruintrin.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double3.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_any_of.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_trivially_destructible.h:
@@ -1456,6 +1791,8 @@ E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_unsigned_integer.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x2.hpp:
+
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_keyboard.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_keycode.h:
@@ -1466,11 +1803,17 @@ E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-
 
 E:/Program/MSYS64/clang64/include/c++/v1/utility:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double2_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_reverse_copy.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/unwrap_range.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_joystick.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_projection.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x3.hpp:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_guid.h:
 
@@ -1491,6 +1834,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_min.h:
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_sensor.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_quit.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x2.hpp:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_gesture.h:
 
@@ -1540,6 +1885,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_move_assignable.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_misc.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x2_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/_mingw_stat64.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/include/SDL2/SDL_vulkan.h:
@@ -1555,6 +1902,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__availability:
 E:/Program/MSYS64/clang64/include/c++/v1/__chrono/year_month_weekday.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/prev.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/epsilon.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/equal.h:
 
@@ -1579,6 +1928,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/cctype:
 E:/Program/MSYS64/clang64/include/c++/v1/ctype.h:
 
 E:/Program/MSYS64/clang64/include/ctype.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float2.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/shift_right.h:
 
@@ -1607,6 +1958,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/stdio.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_is_partitioned.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/initializer_list:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double1.hpp:
 
 E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan.h:
 
@@ -1648,6 +2001,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_signed_integer.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__memory/construct_at.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double4.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/filesystem_error.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_find_if_not.h:
@@ -1670,6 +2025,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/cstddef:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_integral.h:
 
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/include/tiny_obj_loader.h:
+
 E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/remove_const.h:
@@ -1688,6 +2045,10 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_function.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_base_of.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int3_sized.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_core_convertible.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_member_function_pointer.h:
@@ -1698,7 +2059,11 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_member_object_pointer.
 
 E:/Program/MSYS64/clang64/include/sec_api/string_s.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int4.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__compare/ordering.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint3_sized.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__functional/not_fn.h:
 
@@ -1708,9 +2073,15 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/nat.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__utility/forward.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/exponential.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/add_const.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x2_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/add_cv.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool4.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_replace_copy.h:
 
@@ -1731,6 +2102,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/void_t.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_minmax_element.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__compare/compare_three_way_result.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x3.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/partition_copy.h:
 
@@ -1762,6 +2135,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_arithmetic.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/negation.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/hash.inl:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_signed.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_floating_point.h:
@@ -1786,11 +2161,15 @@ E:/Program/MSYS64/clang64/include/c++/v1/cstdlib:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_constant_evaluated.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x2.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_replace_if.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_constructible.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/iter_move.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_transform.inl:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__concepts/invocable.h:
 
@@ -1822,6 +2201,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_final.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_literal_type.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint1_sized.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/locale:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_member_pointer.h:
@@ -1849,6 +2230,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_scalar.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__bit/bit_cast.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_pointer.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool3_precision.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/is_nothrow_move_constructible.h:
 
@@ -1922,7 +2305,11 @@ E:/Program/MSYS64/clang64/include/c++/v1/__concepts/constructible.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__chrono/steady_clock.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool2_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__concepts/different_from.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_transform.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__concepts/equality_comparable.h:
 
@@ -1947,6 +2334,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__iterator/advance.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__undef_macros:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__compare/common_comparison_category.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/glm.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/is_heap.h:
 
@@ -1974,7 +2363,11 @@ E:/Program/MSYS64/clang64/include/c++/v1/__ranges/data.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__ranges/dangling.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_packing.inl:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__ranges/view_interface.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x2_precision.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/iterator_operations.h:
 
@@ -2008,6 +2401,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/stdexcept:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__memory/uses_allocator.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec3.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__memory/assume_aligned.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__string/char_traits.h:
@@ -2015,6 +2410,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__string/char_traits.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__memory/auto_ptr.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/tuple:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x2.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_sample.h:
 
@@ -2032,11 +2429,15 @@ E:/Program/MSYS64/clang64/include/c++/v1/compare:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__functional/reference_wrapper.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x3.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__compare/compare_three_way.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__compare/weak_order.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__compare/strong_order.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint2_sized.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__type_traits/promote.h:
 
@@ -2096,6 +2497,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__chrono/convert_to_timespec.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/chrono:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x3.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__chrono/day.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__chrono/year.h:
@@ -2106,9 +2509,13 @@ E:/Program/MSYS64/clang64/include/c++/v1/__chrono/month.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__memory/temporary_buffer.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x4.hpp:
+
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/texture.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/iterator:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int1.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/back_insert_iterator.h:
 
@@ -2122,6 +2529,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_find_if.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/empty.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x3.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/indirectly_comparable.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/istreambuf_iterator.h:
@@ -2134,17 +2543,25 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_merge.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/ostream_iterator.h:
 
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/model.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x3_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_all_of.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/ostreambuf_iterator.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/reverse_access.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x4.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/size.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/sortable.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__iterator/unreachable_sentinel.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec2.inl:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__mutex_base:
 
@@ -2166,7 +2583,11 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_remove_if.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/min_element.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/vec1.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/find.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x4.inl:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/find_if.h:
 
@@ -2176,9 +2597,13 @@ E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/directory_iterator.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/copy_n.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x4_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/find_end.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/search.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float1.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_max_element.h:
 
@@ -2198,11 +2623,17 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/set_symmetric_difference.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/binary_search.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x4.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/clamp.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float3x4_precision.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/copy_backward.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/count.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/compute_vector_relational.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/equal_range.h:
 
@@ -2222,6 +2653,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/in_found_result.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/in_fun_result.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint1.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/is_sorted.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/in_in_out_result.h:
@@ -2233,6 +2666,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__functional/default_searcher.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/inplace_merge.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/rotate.h:
+
+E:/Program/MSYS64/clang64/lib/clang/15.0.7/include/float.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/is_heap_until.h:
 
@@ -2259,6 +2694,10 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/sort.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/pop_heap.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__debug_utils/randomize_range.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_int_sized.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/make_projected.h:
 
@@ -2292,9 +2731,13 @@ E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan_handles.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_for_each_n.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x4.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_generate.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_generate_n.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool1.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_inplace_merge.h:
 
@@ -2310,6 +2753,10 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_min_element.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_minmax.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float2_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_move.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__split_buffer:
@@ -2318,7 +2765,11 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_none_of.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_partial_sort.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/constants.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_partial_sort_copy.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x2.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_partition.h:
 
@@ -2327,6 +2778,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_partition_point.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_prev_permutation.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_push_heap.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_trigonometric.inl:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_remove_copy.h:
 
@@ -2356,6 +2809,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/bit:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/uniform_random_bit_generator_adaptor.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x2_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__random/uniform_random_bit_generator.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_search_n.h:
@@ -2368,11 +2823,17 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_shuffle.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/shuffle.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x2_precision.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_sort.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_sort_heap.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/stable_partition.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x4.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/ranges_swap_ranges.h:
 
@@ -2397,6 +2858,8 @@ E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/rotate_copy.h:
 E:/Program/MSYS64/clang64/include/c++/v1/__algorithm/transform.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/functional:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x4.hpp:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__functional/bind_front.h:
 
@@ -2438,6 +2901,10 @@ E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/perm_options.h:
 
 E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/path_iterator.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_exponential.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x3.inl:
+
 E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/u8path.h:
 
 E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vk_platform.h:
@@ -2454,6 +2921,8 @@ E:/Program/VulkanSDK/VK_1.3.280.0/Include/vk_video/vulkan_video_codec_av1std.h:
 
 E:/Program/VulkanSDK/VK_1.3.280.0/Include/vk_video/vulkan_video_codec_av1std_decode.h:
 
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/qualifier.hpp:
+
 E:/Program/MSYS64/clang64/include/c++/v1/cassert:
 
 E:/Program/MSYS64/clang64/include/assert.h:
@@ -2466,8 +2935,192 @@ E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/context.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/swapchain.h:
 
+E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/image.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec4.inl:
+
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/render_process.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/descriptor_manager.h:
 
 E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/renderer.h:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/_fixes.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/setup.hpp:
+
+E:/Program/MSYS64/clang64/include/c++/v1/cfloat:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/fwd.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_half.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int2_sized.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_uint_sized.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec3.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double3_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec1.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vec4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool4_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float4_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double4_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_uint4_sized.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat2x2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x3_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float2x3_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat2x4.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x4_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x2.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_half.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat3x3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x3_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat3x4.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double3x4_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x2.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x2.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x3.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_double_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x3.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/mat4x4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double4x4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_mat4x4.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_float4x4_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/geometric.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_geometric.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_vec1.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vector_relational.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_vector_relational.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/_vectorize.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/common.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_double2x2_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/trigonometric.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_integer.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/hash.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_bool1_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_float1_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_double1_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_int1_sized.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_constants.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/scalar_constants.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/constants.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/matrix_transform.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/matrix_clip_space.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/matrix_transform.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_relational.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/vector_relational.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_float.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_geometric.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_geometric.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_common.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_float.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_quat.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_relational.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_quat.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_float_precision.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_double.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_trigonometric.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/ext/quaternion_transform.hpp:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtc/quaternion.inl:
+
+E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/dual_quaternion.hpp:
+
+E:/Program/MSYS64/clang64/include/c++/v1/map:
+
+E:/Program/MSYS64/clang64/include/c++/v1/__tree:

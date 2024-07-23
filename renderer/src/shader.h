@@ -8,6 +8,8 @@ const std::string ROOT_PATH = "E:/Doc/ProjectFiles/CPP/VulkanRenderer/";
 
 class Shader final {
 public:
+    friend class ShaderManager;
+
     Shader(const std::string& vertSrc, const std::string& fragSrc);
     ~Shader();
 
@@ -21,7 +23,18 @@ private:
     std::vector<vk::DescriptorSetLayout> descriptorSetLayouts_;
 
     void initShaderModules(const std::string& vertSrc, const std::string& fragSrc);
-    void initDescriptorSets();
+    void initDescriptorSetLayouts();
+
+};
+
+class ShaderManager final {
+public:
+    Shader* createShader(const std::string& vertSrc, const std::string& fragSrc);
+    Shader* get(int i) const;
+
+private:
+    std::vector<std::unique_ptr<Shader>> datas_;
+
 
 };
 

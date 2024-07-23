@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/context.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/context.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/context.cpp.obj.d"
   "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/descriptor_manager.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/descriptor_manager.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/descriptor_manager.cpp.obj.d"
   "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/huahualib.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/huahualib.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/huahualib.cpp.obj.d"
+  "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/image.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/image.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/image.cpp.obj.d"
+  "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/model.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/model.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/model.cpp.obj.d"
   "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/render_process.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/render_process.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/render_process.cpp.obj.d"
   "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/renderer.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/renderer.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/renderer.cpp.obj.d"
   "E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/shader.cpp" "renderer/CMakeFiles/VulanRenderer.dir/src/shader.cpp.obj" "gcc" "renderer/CMakeFiles/VulanRenderer.dir/src/shader.cpp.obj.d"

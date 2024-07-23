@@ -8,16 +8,25 @@ Swapchain::Swapchain(vk::SurfaceKHR surface, int w, int h): surface(surface) {
     querySwapchainInfo(w, h);
     createSwapchain();
     createImageAndViews();
+    createDepthSource();
 }
 
 Swapchain::~Swapchain() {
+    auto& device = Context::getInstance().device;
+
     for (auto& framebuffer : frameBuffers) {
-        Context::getInstance().device.destroyFramebuffer(framebuffer);
+        device.destroyFramebuffer(framebuffer);
     }
+
     for (auto& imageView : imageViews) {
-        Context::getInstance().device.destroyImageView(imageView);
+        device.destroyImageView(imageView);
     }
-    Context::getInstance().device.destroySwapchainKHR(swapchain);
+
+    device.destroyImageView(depthImageView);
+    device.freeMemory(depthImageMem);
+    device.destroyImage(depthImage);
+
+    device.destroySwapchainKHR(swapchain);
 }
 
 void Swapchain::querySwapchainInfo(int w, int h) {
@@ -113,12 +122,56 @@ void Swapchain::createImageAndViews() {
     }
 }
 
+void Swapchain::createDepthSource() {
+    auto& ctx = Context::getInstance();
+    auto& device = Context::getInstance().device;
+    // Create depth image
+    Image::createImage(
+        info.imageExtent.width, 
+        info.imageExtent.height, 
+        vk::Format::eD32Sfloat, vk::ImageTiling::eOptimal, 
+        vk::ImageUsageFlagBits::eDepthStencilAttachment, 
+        depthImage, depthImageMem);
+
+    // Create image view
+    depthImageView = Image::createImageView(
+        depthImage, vk::Format::eD32Sfloat, 
+        vk::ImageAspectFlagBits::eDepth);
+
+    ctx.cmdManagerPtr->exceuteCommand(ctx.graphicsQueue, [&](vk::CommandBuffer cmdBuf) -> void {
+        vk::ImageMemoryBarrier barrier;
+        vk::ImageSubresourceRange range;
+        range
+            .setAspectMask(vk::ImageAspectFlagBits::eDepth)
+            .setBaseArrayLayer(0)
+            .setLayerCount(1)
+            .setBaseMipLevel(0)
+            .setLevelCount(1);
+        barrier
+            .setImage(depthImage)
+            .setSubresourceRange(range)
+            .setSrcQueueFamilyIndex(vk::QueueFamilyIgnored)
+            .setDstQueueFamilyIndex(vk::QueueFamilyIgnored)
+            .setOldLayout(vk::ImageLayout::eUndefined)
+            .setNewLayout(vk::ImageLayout::eDepthStencilAttachmentOptimal)
+            .setSrcAccessMask(vk::AccessFlagBits::eNone)
+            .setDstAccessMask(vk::AccessFlagBits::eDepthStencilAttachmentRead | vk::AccessFlagBits::eDepthStencilAttachmentWrite);
+        cmdBuf.pipelineBarrier(
+            vk::PipelineStageFlagBits::eTopOfPipe, 
+            vk::PipelineStageFlagBits::eEarlyFragmentTests, 
+            vk::DependencyFlagBits::eByRegion, 
+            {}, {}, barrier);
+    });
+
+}
+
 void Swapchain::createFrameBuffers(int w, int h) {
     frameBuffers.resize(images.size());
     for (int i = 0; i < frameBuffers.size(); ++ i) {
+        std::vector<vk::ImageView> attachments = {imageViews[i], depthImageView};
         vk::FramebufferCreateInfo frameBufferInfo;
         frameBufferInfo
-            .setAttachments(imageViews[i])
+            .setAttachments(attachments)
             .setWidth((uint32_t)w)
             .setHeight((uint32_t)h)
             .setRenderPass(Context::getInstance().renderProcessPtr->renderPass)    // render pass 指定了纹理附件的用途，创建 framebuffer 时无需指定

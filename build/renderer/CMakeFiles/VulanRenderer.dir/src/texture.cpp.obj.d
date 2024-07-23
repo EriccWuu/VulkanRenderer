@@ -637,6 +637,7 @@ renderer/CMakeFiles/VulanRenderer.dir/src/texture.cpp.obj: \
   E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan_structs.hpp \
   E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan_funcs.hpp \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/buffer.h \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/image.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/context.h \
   E:/Program/MSYS64/clang64/include/memory.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/tool.h \

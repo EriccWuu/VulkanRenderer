@@ -75,7 +75,7 @@ vk::Pipeline RenderProcess::createPipeline(const Shader& shader, vk::PrimitiveTo
     rastInfo
         .setCullMode(vk::CullModeFlagBits::eBack)
         .setRasterizerDiscardEnable(vk::False)
-        .setFrontFace(vk::FrontFace::eClockwise)
+        .setFrontFace(vk::FrontFace::eCounterClockwise)
         .setPolygonMode(vk::PolygonMode::eFill)
         .setLineWidth(1);
     pipelineInfo.setPRasterizationState(&rastInfo);
@@ -88,16 +88,36 @@ vk::Pipeline RenderProcess::createPipeline(const Shader& shader, vk::PrimitiveTo
     pipelineInfo.setPMultisampleState(&multiSampleInfo);
 
     // 7. test - stencil test, depth test
+    vk::PipelineDepthStencilStateCreateInfo depthStencilInfo;
+    depthStencilInfo
+        .setDepthTestEnable(vk::True)
+        .setDepthWriteEnable(vk::True)
+        .setDepthCompareOp(vk::CompareOp::eLess)
+        .setDepthBoundsTestEnable(vk::False)
+        .setMinDepthBounds(0.f)
+        .setMaxDepthBounds(1.f)
+        .setStencilTestEnable(vk::False)
+        .setBack({})
+        .setFront({});
+    pipelineInfo.setPDepthStencilState(&depthStencilInfo);
 
     // 8. Color blending
+    // newRGB = (srcFactor * srcRGB) <op> (dstFactor * dstRGB)
     vk::PipelineColorBlendStateCreateInfo colorBlendInfo;
     vk::PipelineColorBlendAttachmentState attachments;
     attachments
-        .setBlendEnable(vk::False)
-        .setColorWriteMask(vk::ColorComponentFlagBits::eA |
+        .setBlendEnable(vk::True)
+        .setColorWriteMask(
+            vk::ColorComponentFlagBits::eA |
             vk::ColorComponentFlagBits::eB |
             vk::ColorComponentFlagBits::eG |
-            vk::ColorComponentFlagBits::eR);
+            vk::ColorComponentFlagBits::eR)
+        .setSrcColorBlendFactor(vk::BlendFactor::eOne)
+        .setDstColorBlendFactor(vk::BlendFactor::eOneMinusSrcAlpha)
+        .setColorBlendOp(vk::BlendOp::eAdd)
+        .setSrcAlphaBlendFactor(vk::BlendFactor::eOne)
+        .setDstAlphaBlendFactor(vk::BlendFactor::eZero)
+        .setAlphaBlendOp(vk::BlendOp::eAdd);
     colorBlendInfo
         .setLogicOpEnable(vk::False)
         .setAttachments(attachments);
@@ -126,7 +146,7 @@ vk::PipelineLayout RenderProcess::createLayout() {
         .setSize(sizeof(glm::vec3))
         .setStageFlags(vk::ShaderStageFlagBits::eFragment);
     layoutInfo
-        .setSetLayouts(Context::getInstance().shaderPtr->getDescriptorSetLayouts())
+        .setSetLayouts(Context::getInstance().shaderManagerPtr->get(0)->getDescriptorSetLayouts())
         .setPushConstantRanges(range);
     vk::PipelineLayout layout;
     try {
@@ -140,40 +160,60 @@ vk::PipelineLayout RenderProcess::createLayout() {
 
 vk::RenderPass RenderProcess::createRenderPass_() {
     vk::RenderPassCreateInfo renderPassInfo;
-    vk::AttachmentDescription attachmentDescription;
-    attachmentDescription
+
+    vk::AttachmentDescription colorAttachmentDescription;
+    colorAttachmentDescription
         .setFormat(Context::getInstance().swapchainPtr->info.format.format)
+        .setSamples(vk::SampleCountFlagBits::e1)
         .setInitialLayout(vk::ImageLayout::eUndefined)
         .setFinalLayout(vk::ImageLayout::ePresentSrcKHR)
         .setLoadOp(vk::AttachmentLoadOp::eClear)
         .setStoreOp(vk::AttachmentStoreOp::eStore)
         .setStencilLoadOp(vk::AttachmentLoadOp::eDontCare)
-        .setStencilStoreOp(vk::AttachmentStoreOp::eDontCare)
-        .setSamples(vk::SampleCountFlagBits::e1);
-
-    renderPassInfo.setAttachments(attachmentDescription);
+        .setStencilStoreOp(vk::AttachmentStoreOp::eDontCare);
     
-    vk::AttachmentReference attachmentRef;
-    attachmentRef
+    vk::AttachmentDescription depthAttachmentDescription;
+    depthAttachmentDescription
+        .setFormat(vk::Format::eD32Sfloat)
+        .setSamples(vk::SampleCountFlagBits::e1)
+        .setInitialLayout(vk::ImageLayout::eUndefined)
+        .setFinalLayout(vk::ImageLayout::eDepthStencilAttachmentOptimal)
+        .setLoadOp(vk::AttachmentLoadOp::eClear)
+        .setStoreOp(vk::AttachmentStoreOp::eDontCare)
+        .setStencilLoadOp(vk::AttachmentLoadOp::eDontCare)
+        .setStencilStoreOp(vk::AttachmentStoreOp::eDontCare);
+
+    std::vector<vk::AttachmentDescription> attachmentDescriptions = {colorAttachmentDescription, depthAttachmentDescription};
+
+    vk::AttachmentReference colorAttachmentRef;
+    colorAttachmentRef
         .setLayout(vk::ImageLayout::eColorAttachmentOptimal)
         .setAttachment(0);  // Reference of attachment 0
+    
+    vk::AttachmentReference depthAttachmentRef;
+    depthAttachmentRef
+        .setLayout(vk::ImageLayout::eDepthStencilAttachmentOptimal)
+        .setAttachment(1);
     
     vk::SubpassDescription subpassDescription;
     subpassDescription
         .setPipelineBindPoint(vk::PipelineBindPoint::eGraphics)
-        .setColorAttachments(attachmentRef);
-    
-    renderPassInfo.setSubpasses(subpassDescription);
+        .setPDepthStencilAttachment(&depthAttachmentRef)
+        .setColorAttachments(colorAttachmentRef);
     
     vk::SubpassDependency dependency;
     dependency
         .setSrcSubpass(vk::SubpassExternal)
         .setDstSubpass(0)   // reference to subpass 0
-        .setDstAccessMask(vk::AccessFlagBits::eColorAttachmentWrite)
-        .setSrcStageMask(vk::PipelineStageFlagBits::eColorAttachmentOutput)
-        .setDstStageMask(vk::PipelineStageFlagBits::eColorAttachmentOutput);
+        .setSrcAccessMask(vk::AccessFlagBits::eNone)
+        .setDstAccessMask(vk::AccessFlagBits::eColorAttachmentWrite | vk::AccessFlagBits::eDepthStencilAttachmentWrite)
+        .setSrcStageMask(vk::PipelineStageFlagBits::eColorAttachmentOutput | vk::PipelineStageFlagBits::eEarlyFragmentTests)
+        .setDstStageMask(vk::PipelineStageFlagBits::eColorAttachmentOutput | vk::PipelineStageFlagBits::eEarlyFragmentTests);
     
-    renderPassInfo.setDependencies(dependency);
+    renderPassInfo
+        .setAttachments(attachmentDescriptions)
+        .setSubpasses(subpassDescription)
+        .setDependencies(dependency);
 
     vk::RenderPass renderPass;
     try {

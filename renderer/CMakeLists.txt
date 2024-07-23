@@ -1,5 +1,5 @@
-set(THIRD_PARITY_DIRS "3rdparty")
-set(THIRD_PARITY_INCLUDE_DIRS "include")
+set(THIRD_PARITY_DIRS "${RENDERER_ROOT_DIR}/3rdparty")
+set(THIRD_PARITY_INCLUDE_DIRS "${RENDERER_ROOT_DIR}/include")
 
 add_subdirectory(3rdparty)
 

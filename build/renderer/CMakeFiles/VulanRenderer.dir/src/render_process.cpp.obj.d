@@ -660,6 +660,7 @@ renderer/CMakeFiles/VulanRenderer.dir/src/render_process.cpp.obj: \
   E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/u8path.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/swapchain.h \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/image.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/command_manager.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/descriptor_manager.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/texture.h \
@@ -818,4 +819,112 @@ renderer/CMakeFiles/VulanRenderer.dir/src/render_process.cpp.obj: \
   E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/vector_relational.hpp \
   E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/integer.hpp \
   E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/func_integer.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/hash.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../vec2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/vec1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_bool1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../detail/type_vec1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_bool1_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_float1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_float1_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_double1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_double1_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_int1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_int1_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../ext/vector_int1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_uint1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_uint1_sized.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../ext/vector_uint1.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/quaternion.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/scalar_constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/scalar_constants.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/constants.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../gtc/matrix_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../vec2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/matrix_projection.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../matrix.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/matrix_projection.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/matrix_clip_space.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../ext/scalar_constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/matrix_clip_space.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/matrix_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/matrix_transform.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/matrix_transform.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../matrix.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../detail/qualifier.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/vector_relational.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../detail/type_float.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../ext/quaternion_geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../exponential.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/quaternion_geometric.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/quaternion_common.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_float.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/../detail/type_quat.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../detail/type_mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../detail/type_mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../detail/type_vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../detail/type_vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../ext/quaternion_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/quaternion_relational.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../gtc/matrix_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/type_quat.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../ext/quaternion_common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/detail/../ext/quaternion_geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_float_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_double.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_double_precision.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_trigonometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/scalar_constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/quaternion_trigonometric.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../ext/quaternion_transform.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/./ext/quaternion_transform.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../detail/type_mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../detail/type_mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../detail/type_vec3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../detail/type_vec4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/quaternion.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../exponential.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/epsilon.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../detail/setup.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../detail/qualifier.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/epsilon.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../vector_relational.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/../common.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtx/dual_quaternion.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../glm.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../gtc/constants.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/dual_quaternion.inl \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../geometric.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat2x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat2x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat2x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat3x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat3x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat3x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat4x2.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat4x3.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/../mat4x4.hpp \
+  E:/Program/VulkanSDK/VK_1.3.280.0/Include/glm/gtx/hash.inl \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/uniform.h

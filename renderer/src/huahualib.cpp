@@ -9,14 +9,16 @@ void init(const std::vector<const char*> &extensions, CreateSurfaceFunc func, in
     uint32_t maxFlight = 2;
     Context::init(extensions, func);
     auto& ctx = Context::getInstance();
+    ctx.initCommandPool();
     ctx.initSwapchain(w, h);
+    ctx.initShaderManager();
     ctx.initShaderModule();
+    // ctx.initCommandPool();
+    ctx.initDescriptorPool(maxFlight);
+    ctx.initTextureManager();
     ctx.initRenderProcess();
     ctx.initGraphicsPipeline();
     ctx.swapchainPtr->createFrameBuffers(w, h);
-    ctx.initCommandPool();
-    ctx.initDescriptorPool(maxFlight);
-    ctx.initTextureManager();
 
     rendererPtr.reset(new Renderer(maxFlight));
 }
@@ -26,12 +28,12 @@ void quit() {
     ctx.device.waitIdle();
     rendererPtr.reset();
 
-    ctx.textureManagerPtr.reset();
-    ctx.descriptorManagerPtr.reset();
-    ctx.shaderPtr.reset();
-    ctx.cmdManagerPtr.reset();
     ctx.renderProcessPtr.reset();
     ctx.swapchainPtr.reset();
+    ctx.textureManagerPtr.reset();
+    ctx.descriptorManagerPtr.reset();
+    ctx.shaderManagerPtr.reset();
+    ctx.cmdManagerPtr.reset();
     Context::quit();
 }
 

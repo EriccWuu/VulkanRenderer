@@ -6,7 +6,7 @@ namespace huahualib {
 
 Shader::Shader(const std::string& vertSrc, const std::string& fragSrc) {
     initShaderModules(vertSrc, fragSrc);
-    initDescriptorSets();
+    initDescriptorSetLayouts();
 }
 
 Shader::~Shader() {
@@ -53,7 +53,7 @@ void Shader::initShaderModules(const std::string& vertSrc, const std::string& fr
     std::cout << "Framgemt shader module created successed." << std::endl;
 }
 
-void Shader::initDescriptorSets() {
+void Shader::initDescriptorSetLayouts() {
     vk::DescriptorSetLayoutCreateInfo setLayoutInfo;
     vk::DescriptorSetLayoutBinding uboBinding;
     uboBinding
@@ -61,22 +61,41 @@ void Shader::initDescriptorSets() {
             .setDescriptorCount(1)
             .setDescriptorType(vk::DescriptorType::eUniformBuffer)
             .setStageFlags(vk::ShaderStageFlagBits::eVertex);
-    vk::DescriptorSetLayoutBinding samplerBinding;
-    samplerBinding
-        .setBinding(1)
-        .setDescriptorCount(1)
-        .setDescriptorType(vk::DescriptorType::eCombinedImageSampler)
-        .setStageFlags(vk::ShaderStageFlagBits::eFragment);
-    std::vector<vk::DescriptorSetLayoutBinding> bindings = {uboBinding, samplerBinding};
-    setLayoutInfo.setBindings(bindings);
-    vk::DescriptorSetLayout setLayout;
+
+    setLayoutInfo.setBindings(uboBinding);
     try {
-        setLayout = Context::getInstance().device.createDescriptorSetLayout(setLayoutInfo);
+        descriptorSetLayouts_.push_back(Context::getInstance().device.createDescriptorSetLayout(setLayoutInfo));
         std::cout << "Descriptor set layout created successed." << std::endl;
     } catch (const std::exception &e) {
         throw std::runtime_error("Failed to create descriptor set layout!\n");
     }
-    descriptorSetLayouts_.push_back(setLayout);
+
+    vk::DescriptorSetLayoutBinding samplerBinding;
+    samplerBinding
+        .setBinding(0)
+        .setDescriptorCount(1)
+        .setDescriptorType(vk::DescriptorType::eCombinedImageSampler)
+        .setStageFlags(vk::ShaderStageFlagBits::eFragment);
+
+    setLayoutInfo.setBindings(samplerBinding);
+    try {
+        descriptorSetLayouts_.push_back(Context::getInstance().device.createDescriptorSetLayout(setLayoutInfo));
+        std::cout << "Descriptor set layout created successed." << std::endl;
+    } catch (const std::exception &e) {
+        throw std::runtime_error("Failed to create descriptor set layout!\n");
+    }
+}
+
+/*******************************************************
+*                     TextureManager                   *
+*******************************************************/
+Shader* ShaderManager::createShader(const std::string& vertSrc, const std::string& fragSrc) {
+    datas_.push_back(std::make_unique<Shader>(vertSrc, fragSrc));
+    return datas_.back().get();
+}
+
+Shader* ShaderManager::get(int i) const {
+    return datas_[i].get();
 }
 
 }

@@ -113,7 +113,7 @@ void Context::initRenderProcess() {
 }
 
 void Context::initGraphicsPipeline() {
-    renderProcessPtr->createGraphicsPipeline(*shaderPtr);
+    renderProcessPtr->createGraphicsPipeline(*shaderManagerPtr->get(0));
 }
 
 void Context::initDescriptorPool(uint32_t maxFlight) {
@@ -123,7 +123,11 @@ void Context::initDescriptorPool(uint32_t maxFlight) {
 void Context::initShaderModule() {
     auto vertexSource = readWholeFile(ROOT_PATH + "renderer/assets/shaders/shader.vert.spv");
     auto fragmentSource = readWholeFile(ROOT_PATH + "renderer/assets/shaders/shader.frag.spv");
-    shaderPtr = std::make_unique<Shader>(vertexSource, fragmentSource);
+    shaderManagerPtr->createShader(vertexSource, fragmentSource);
+}
+
+void Context::initShaderManager() {
+    shaderManagerPtr.reset(new ShaderManager);
 }
 
 void Context::initTextureManager() {

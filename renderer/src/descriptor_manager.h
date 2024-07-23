@@ -9,11 +9,15 @@ public:
     DescriptorManager(uint32_t maxFlight);
     ~DescriptorManager();
 
-    std::vector<vk::DescriptorSet> allocateBufferSets(const std::vector<vk::DescriptorSetLayout> &setLayouts);
-    std::vector<vk::DescriptorSet> allocateImageSets(const std::vector<vk::DescriptorSetLayout> &setLayouts);
+    std::vector<vk::DescriptorSet> allocateDescriptorSets(const std::vector<vk::DescriptorSetLayout> &setLayouts);
     void freeDescriptorSets(std::vector<vk::DescriptorSet>& sets);
 
 private:
+    struct SetInfo {
+        vk::DescriptorPool pool;
+        vk::DescriptorSet set;
+    };
+
     uint32_t maxFlight_;
     vk::DescriptorPool descriptorPool_;
 

@@ -2,7 +2,10 @@
 
 #include <vector>
 #include "vulkan/vulkan.hpp"
+
+#define GLM_ENABLE_EXPERIMENTAL
 #include "glm/glm.hpp"
+#include <glm/gtx/hash.hpp>
 
 namespace huahualib {
 
@@ -13,6 +16,15 @@ struct Vertex final {
     glm::vec3 bitangent;
     glm::vec3 color;
     glm::vec2 texcoord;
+
+    bool operator==(const Vertex &other) const {
+        return pos == other.pos &&
+               normal == other.normal &&
+               texcoord == other.texcoord &&
+               tangent == other.tangent && 
+               bitangent == other.bitangent &&
+               color == other.color;
+    }
 
     static std::vector<vk::VertexInputAttributeDescription> getAttribute() {
         std::vector<vk::VertexInputAttributeDescription> attributes(6);
@@ -65,4 +77,14 @@ struct Vertex final {
     }
 };
 
+}
+
+namespace std {
+    template<> struct hash<huahualib::Vertex> {
+        size_t operator()(huahualib::Vertex const &vertex) const {
+            return ((hash<glm::vec3>()(vertex.pos) ^ 
+                (hash<glm::vec3>()(vertex.normal) << 1)) >> 1) ^ 
+                (hash<glm::vec2>()(vertex.texcoord) << 1);
+        }
+    };
 }

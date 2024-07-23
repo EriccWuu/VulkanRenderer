@@ -3,6 +3,7 @@
 #include <string_view>
 #include "vulkan/vulkan.hpp"
 #include "buffer.h"
+#include "image.h"
 
 namespace huahualib {
 
@@ -12,8 +13,6 @@ public:
     vk::Image image;
     vk::ImageView view;
     vk::DeviceMemory memory;
-    vk::Sampler sampler;
-    std::vector<vk::DescriptorSet> sets;
 
     Texture(std::string_view filename);
     Texture(void* data, uint32_t w, uint32_t h);

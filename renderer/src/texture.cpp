@@ -45,20 +45,12 @@ void Texture::init(void* data, uint32_t w, uint32_t h) {
 
     createImage(w, h);
     allocMemory();
-
-    auto& ctx = Context::getInstance();
-    ctx.device.bindImageMemory(image, memory, 0);
+    createImageView();
 
     transitionImageLayoutFromUndefineToDst();
     transformDataToImage(*buffer, w, h);
     transitionImageLayoutFromDstToOptimal();
 
-    createImageView();
-
-    std::vector<vk::DescriptorSetLayout> layouts(2, ctx.shaderPtr->getDescriptorSetLayouts()[0]);
-    sets = ctx.descriptorManagerPtr->allocateImageSets(layouts);
-
-    // updateDescriptorSet();
 }
 
 void Texture::createImage(uint32_t w, uint32_t h) {
@@ -116,6 +108,8 @@ void Texture::allocMemory() {
     } catch (const std::exception &e) {
         throw std::runtime_error("Failed to allocate image memory!\n");
     }
+
+    device.bindImageMemory(image, memory, 0);
 }
 
 uint32_t Texture::queryImageMemoryIndex(size_t memTypeBits, vk::MemoryPropertyFlags memProperty) {
@@ -123,7 +117,6 @@ uint32_t Texture::queryImageMemoryIndex(size_t memTypeBits, vk::MemoryPropertyFl
     for (int i = 0; i < properties.memoryTypeCount; ++ i) {
         if ((i << 1) & memTypeBits && properties.memoryTypes[i].propertyFlags & memProperty) {
             return i;
-            break;
         }
     }
 

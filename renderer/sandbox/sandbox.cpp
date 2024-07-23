@@ -8,6 +8,46 @@
 int width = 1024;
 int height = 720;
 
+std::vector<huahualib::Vertex> vertices = {{
+    {
+        glm::vec3(-0.5, -0.5, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec2(0.0, 0.0)
+    },
+    {
+        glm::vec3(0.5, -0.5, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec2(1.0, 0.0)
+    },
+    {
+        glm::vec3(0.5, 0.5, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec2(1.0, 1.0)
+    },
+    {
+        glm::vec3(-0.5, 0.5, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec3(0.0, 0.0, 0.0),
+        glm::vec2(0.0, 1.0)
+    }
+}};
+
+std::vector<uint32_t> indices = {
+    0, 1, 3,
+    1, 2, 3
+};
+
 int main(int argc, char** argv) {
     SDL_Init(SDL_INIT_EVERYTHING);
     SDL_Window *window = SDL_CreateWindow("VulkanRenderer", 
@@ -38,7 +78,15 @@ int main(int argc, char** argv) {
             return surface;
         }, width, height);
     
+    // std::string objFilename = huahualib::ROOT_PATH + "renderer/assets/models/keqing/keqing.obj";
+    // std::string mtlBasedir = huahualib::ROOT_PATH + "renderer/assets/models/keqing";
+    std::string objFilename = huahualib::ROOT_PATH + "renderer/assets/models/Red/Red.obj";
+    std::string mtlBasedir = huahualib::ROOT_PATH + "renderer/assets/models/Red";
+    huahualib::Model model(objFilename, mtlBasedir);
+    
     auto renderer = huahualib::getRenderer();
+    renderer->bindVertices(model.vertices());
+    renderer->bindIndices(model.indices());
 
     while (!shouldClose) {
         while (SDL_PollEvent(&event)) {
@@ -46,7 +94,10 @@ int main(int argc, char** argv) {
                 shouldClose = true;
         }
 
+        renderer->beginRender();
         renderer->render();
+        renderer->endRender();
+        renderer->present();
     }
 
     huahualib::quit();

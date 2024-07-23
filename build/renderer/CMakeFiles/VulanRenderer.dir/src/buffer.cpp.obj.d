@@ -659,6 +659,7 @@ renderer/CMakeFiles/VulanRenderer.dir/src/buffer.cpp.obj: \
   E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/recursive_directory_iterator.h \
   E:/Program/MSYS64/clang64/include/c++/v1/__filesystem/u8path.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/swapchain.h \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/image.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/shader.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/render_process.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/command_manager.h \

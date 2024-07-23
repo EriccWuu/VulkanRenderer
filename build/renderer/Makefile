@@ -249,6 +249,54 @@ src/huahualib.cpp.s:
 	cd /d E:\Doc\ProjectFiles\CPP\VulkanRenderer\build && $(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/src/huahualib.cpp.s
 .PHONY : src/huahualib.cpp.s
 
+src/image.obj: src/image.cpp.obj
+.PHONY : src/image.obj
+
+# target to build an object file
+src/image.cpp.obj:
+	cd /d E:\Doc\ProjectFiles\CPP\VulkanRenderer\build && $(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/src/image.cpp.obj
+.PHONY : src/image.cpp.obj
+
+src/image.i: src/image.cpp.i
+.PHONY : src/image.i
+
+# target to preprocess a source file
+src/image.cpp.i:
+	cd /d E:\Doc\ProjectFiles\CPP\VulkanRenderer\build && $(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/src/image.cpp.i
+.PHONY : src/image.cpp.i
+
+src/image.s: src/image.cpp.s
+.PHONY : src/image.s
+
+# target to generate assembly for a file
+src/image.cpp.s:
+	cd /d E:\Doc\ProjectFiles\CPP\VulkanRenderer\build && $(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/src/image.cpp.s
+.PHONY : src/image.cpp.s
+
+src/model.obj: src/model.cpp.obj
+.PHONY : src/model.obj
+
+# target to build an object file
+src/model.cpp.obj:
+	cd /d E:\Doc\ProjectFiles\CPP\VulkanRenderer\build && $(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/src/model.cpp.obj
+.PHONY : src/model.cpp.obj
+
+src/model.i: src/model.cpp.i
+.PHONY : src/model.i
+
+# target to preprocess a source file
+src/model.cpp.i:
+	cd /d E:\Doc\ProjectFiles\CPP\VulkanRenderer\build && $(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/src/model.cpp.i
+.PHONY : src/model.cpp.i
+
+src/model.s: src/model.cpp.s
+.PHONY : src/model.s
+
+# target to generate assembly for a file
+src/model.cpp.s:
+	cd /d E:\Doc\ProjectFiles\CPP\VulkanRenderer\build && $(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/src/model.cpp.s
+.PHONY : src/model.cpp.s
+
 src/render_process.obj: src/render_process.cpp.obj
 .PHONY : src/render_process.obj
 
@@ -417,6 +465,12 @@ help:
 	@echo ... src/huahualib.obj
 	@echo ... src/huahualib.i
 	@echo ... src/huahualib.s
+	@echo ... src/image.obj
+	@echo ... src/image.i
+	@echo ... src/image.s
+	@echo ... src/model.obj
+	@echo ... src/model.i
+	@echo ... src/model.s
 	@echo ... src/render_process.obj
 	@echo ... src/render_process.i
 	@echo ... src/render_process.s

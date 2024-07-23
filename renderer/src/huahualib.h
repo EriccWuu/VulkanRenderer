@@ -4,6 +4,8 @@
 #include "vulkan/vulkan.hpp"
 #include "context.h"
 #include "renderer.h"
+#include "model.h"
+#include "vertex.h"
 
 namespace huahualib {
 

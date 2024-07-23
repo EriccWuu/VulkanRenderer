@@ -11,22 +11,6 @@ DescriptorManager::~DescriptorManager() {
     Context::getInstance().device.destroyDescriptorPool(descriptorPool_);
 }
 
-std::vector<vk::DescriptorSet> DescriptorManager::allocateBufferSets(const std::vector<vk::DescriptorSetLayout> &setLayouts) {
-    vk::DescriptorSetAllocateInfo allocInfo;
-    allocInfo
-        .setDescriptorPool(descriptorPool_)
-        .setSetLayouts(setLayouts);
-    return Context::getInstance().device.allocateDescriptorSets(allocInfo);
-}
-
-std::vector<vk::DescriptorSet> DescriptorManager::allocateImageSets(const std::vector<vk::DescriptorSetLayout> &setLayouts) {
-    vk::DescriptorSetAllocateInfo allocInfo;
-    allocInfo
-        .setDescriptorPool(descriptorPool_)
-        .setSetLayouts(setLayouts);
-    return Context::getInstance().device.allocateDescriptorSets(allocInfo);
-}
-
 void DescriptorManager::createDescriporPool() {
     vk::DescriptorPoolCreateInfo poolInfo;
     std::vector<vk::DescriptorPoolSize> poolSizes(2);
@@ -37,6 +21,7 @@ void DescriptorManager::createDescriporPool() {
         .setType(vk::DescriptorType::eCombinedImageSampler)
         .setDescriptorCount(maxFlight_);
     poolInfo
+        .setFlags(vk::DescriptorPoolCreateFlagBits::eFreeDescriptorSet)
         .setMaxSets(2 * maxFlight_)
         .setPoolSizes(poolSizes);
     try {
@@ -45,6 +30,14 @@ void DescriptorManager::createDescriporPool() {
     } catch (const std::exception &e) {
         throw std::runtime_error("Failed to create destcriptor pool!\n");
     }
+}
+
+std::vector<vk::DescriptorSet> DescriptorManager::allocateDescriptorSets(const std::vector<vk::DescriptorSetLayout> &setLayouts) {
+    vk::DescriptorSetAllocateInfo allocInfo;
+    allocInfo
+        .setDescriptorPool(descriptorPool_)
+        .setSetLayouts(setLayouts);
+    return Context::getInstance().device.allocateDescriptorSets(allocInfo);
 }
 
 }

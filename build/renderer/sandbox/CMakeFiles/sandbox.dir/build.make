@@ -92,12 +92,10 @@ sandbox_EXTERNAL_OBJECTS =
 
 bin/sandbox.exe: renderer/sandbox/CMakeFiles/sandbox.dir/sandbox.cpp.obj
 bin/sandbox.exe: renderer/sandbox/CMakeFiles/sandbox.dir/build.make
-bin/sandbox.exe: E:/Program/VulkanSDK/VK_1.3.280.0/Lib/vulkan-1.lib
-bin/sandbox.exe: E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a
 bin/sandbox.exe: renderer/libVulanRenderer.a
-bin/sandbox.exe: E:/Program/VulkanSDK/VK_1.3.280.0/Lib/vulkan-1.lib
 bin/sandbox.exe: E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2main.a
 bin/sandbox.exe: E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/3rdparty/SDL2-2.30.4/x86_64-w64-mingw32/lib/libSDL2.dll.a
+bin/sandbox.exe: E:/Program/VulkanSDK/VK_1.3.280.0/Lib/vulkan-1.lib
 bin/sandbox.exe: renderer/sandbox/CMakeFiles/sandbox.dir/linkLibs.rsp
 bin/sandbox.exe: renderer/sandbox/CMakeFiles/sandbox.dir/objects1.rsp
 bin/sandbox.exe: renderer/sandbox/CMakeFiles/sandbox.dir/link.txt

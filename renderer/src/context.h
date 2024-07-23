@@ -34,7 +34,7 @@ public:
     std::unique_ptr<Swapchain> swapchainPtr;     // Swapchain
     std::unique_ptr<RenderProcess> renderProcessPtr;
     std::unique_ptr<CommandManager> cmdManagerPtr;
-    std::unique_ptr<Shader> shaderPtr;
+    std::unique_ptr<ShaderManager> shaderManagerPtr;
     std::unique_ptr<DescriptorManager> descriptorManagerPtr;
     std::unique_ptr<TextureManager> textureManagerPtr;
 
@@ -49,6 +49,7 @@ public:
     void initSwapchain(int w, int h);
     void initRenderer();
     void initShaderModule();
+    void initShaderManager();
     void initRenderProcess();
     void initGraphicsPipeline();
     void initCommandPool();

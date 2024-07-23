@@ -658,6 +658,7 @@ renderer/CMakeFiles/VulanRenderer.dir/src/context.cpp.obj: \
   E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan_structs.hpp \
   E:/Program/VulkanSDK/VK_1.3.280.0/Include/vulkan/vulkan_funcs.hpp \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/swapchain.h \
+  E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/image.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/shader.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/render_process.h \
   E:/Doc/ProjectFiles/CPP/VulkanRenderer/renderer/src/command_manager.h \

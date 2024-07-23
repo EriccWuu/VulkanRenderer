@@ -145,12 +145,12 @@ renderer/sandbox/clean: renderer/sandbox/CMakeFiles/sandbox.dir/clean
 renderer/CMakeFiles/VulanRenderer.dir/all:
 	$(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/depend
 	$(MAKE) $(MAKESILENT) -f renderer\CMakeFiles\VulanRenderer.dir\build.make renderer/CMakeFiles/VulanRenderer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target VulanRenderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target VulanRenderer"
 .PHONY : renderer/CMakeFiles/VulanRenderer.dir/all
 
 # Build rule for subdir invocation for target.
 renderer/CMakeFiles/VulanRenderer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 renderer/CMakeFiles/VulanRenderer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles 0
 .PHONY : renderer/CMakeFiles/VulanRenderer.dir/rule
@@ -171,12 +171,12 @@ renderer/CMakeFiles/VulanRenderer.dir/clean:
 renderer/sandbox/CMakeFiles/sandbox.dir/all: renderer/CMakeFiles/VulanRenderer.dir/all
 	$(MAKE) $(MAKESILENT) -f renderer\sandbox\CMakeFiles\sandbox.dir\build.make renderer/sandbox/CMakeFiles/sandbox.dir/depend
 	$(MAKE) $(MAKESILENT) -f renderer\sandbox\CMakeFiles\sandbox.dir\build.make renderer/sandbox/CMakeFiles/sandbox.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles --progress-num=13,14 "Built target sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles --progress-num=15,16 "Built target sandbox"
 .PHONY : renderer/sandbox/CMakeFiles/sandbox.dir/all
 
 # Build rule for subdir invocation for target.
 renderer/sandbox/CMakeFiles/sandbox.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 renderer/sandbox/CMakeFiles/sandbox.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\Doc\ProjectFiles\CPP\VulkanRenderer\build\CMakeFiles 0
 .PHONY : renderer/sandbox/CMakeFiles/sandbox.dir/rule
